@@ -1,0 +1,18 @@
+{% extends "Meus_projeto/base.html" %}
+
+{% block header %}
+    <div class="jumbotron">
+        <h1>Acompanhe seu aprendizado.</h1>
+    </div>
+{% endblock header%}
+
+{% block content%}
+    {% if user.is_authenticated %}
+        <h2>Sempre que você aprender algo novo sobre um tópico, faça um entrada resumindo o que você aprendeu</h2>
+    {% else %}
+        <h2>
+        <a href="{% url 'register' %}">Crie uma conta para utilizar o Meus_projeto e liste os tópicos que você está aprendendo.</a>
+        </h2>
+        <h2>Sempre que você aprender algo novo sobre um tópico, faça um entrada resumindo o que você aprendeu</h2>
+    {% endif %}
+{% endblock content%}

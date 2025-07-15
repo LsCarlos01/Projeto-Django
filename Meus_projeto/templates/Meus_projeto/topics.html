@@ -1,0 +1,26 @@
+{% extends "Meus_projeto/base.html" %}
+{% load bootstrap3 %}
+
+{% block header%}
+    
+    <h1 >Tópicos: </h1>
+    
+{% endblock %}
+
+{% block content %}
+    <div style="max-width: 500px; margin-left: 0;">
+        <div class="list-group">
+            {% for topic in topics%}    
+                    <a href= "{% url 'topic' topic.id %}" class="list-group-item list-group-item-action">
+                        {{ topic }}
+                    </a>
+            {% empty %}
+                <p class="list-group-item disebled">Não há tópicos adicionados.</p>
+            {% endfor %}
+        </div>
+    </div>
+    <h3 class="mt-4">
+        <a href= "{% url 'new_topic' %}" class="btn btn-primary""> Adicionar novos tópicos</a>
+    </h3>
+
+{% endblock content %}
