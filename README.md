@@ -13,7 +13,7 @@ Projeto de anotações e estudos feito com o Django, com auntenticação de usu�
 - ## Como rodar localmente
 
 ```bash
-git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/LsCarlos01/Projeto-Django.git)
+git clone https://github.com/LsCarlos01/Projeto-Django.git
 cd Projeto-Django
 python -m venv venv
 source venv/bin/activate  # ou venv\Scripts\activate no Windows
