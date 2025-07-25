@@ -1,6 +1,7 @@
 # Meu Projeto Django
 
 Projeto de anotações e estudos feito com o Django, com auntenticação de usuários, criação de tópicos e anotações pessoais.
+(Foi feito com base em um curso, com objetivo de aprender sobre o Django)
 
 ## Funcionalidades
 
